@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style for completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: #888;  /* Optional: Makes the completed task look lighter */
+}
+
+/* Ensure delete button stays unaffected */
+.task-list .delete {
+    text-decoration: none;  /* Make sure delete link doesn't get line-through */
+    color: red;  /* Optional: Makes delete text red */
+}
+
+/* Optional: Make 'Mark as Completed' link also styled well */
+.task-list .mark-completed {
+    color: green;  /* Optional: Makes 'Mark as Completed' link green */
+}
+
+
+.task-form button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-list li a.delete {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.task-list li a.delete:hover {
+    text-decoration: underline;
+}
